@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(227, 227, 227);
+    display: flex; /* centraliza o conteúdo verticalmente */
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
+}
+
+.container {
+    max-width: 800px; /* define a largura máxima do conteúdo */
+    width: 100%; /* garante que o conteúdo se ajuste ao tamanho da tela */
+}
+
+.produto {
+    width: 100%; /* ocupa toda a largura disponível */
+    max-width: 400px; /* define a largura máxima do retângulo */
+    height: 40px;
+    background-color: rgba(240, 240, 240, 0.5); /* cor de fundo do retângulo */
+    margin: 10px; /* margem ao redor do retângulo */
+    padding: 10px; /* preenchimento interno do retângulo */
+    display: flex; /* torna o container um flex container */
+    justify-content: flex-start; /* alinha os itens horizontalmente */
+    align-items: center; /* alinha os itens verticalmente */
+    margin-top: 36px; /* espaço acima dos retângulos */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; /* borda do retângulo */
+}
+
+.produto img {
+    width:150px;
+    height: 100px;
+}
+
+.teste {
+    width: 230px; /* largura do retângulo */
+    height: 60px; /* altura do retângulo */
+    background-color: rgb(227, 227, 227); /* cor de fundo do retângulo */
+    margin: 10px; /* margem ao redor do retângulo */
+    padding: 10px; /* preenchimento interno do retângulo */
+    border: 1px solid #ccc; /* borda do retângulo */
+    display: flex; /* torna o container um flex container */
+    justify-content: flex-start; /* alinha os itens horizontalmente à esquerda */
+    align-items: center; /* alinha os itens verticalmente */
+
+}
+
+.teste p {
+    margin: 0; /* remove a margem interna do parágrafo */
+    font-family: 'ChineseRocks'; /* nome da sua fonte */
+    font-size: 30px; /* tamanho da fonte */
+}
+
+.finalizar-pedido {
+    width: 200px; /* largura do botão */
+    height: 50px; /* altura do botão */
+    background-color: rgb(242, 156, 85); /* cor de fundo do botão usando RGB */
+    color: #fff; /* cor do texto do botão */
+    border: none; /* remove a borda do botão */
+    font-size: 16px; /* tamanho da fonte do texto do botão */
+    cursor: pointer; /* cursor do mouse ao passar sobre o botão */
+    margin: 28px 60px; /* margem superior e inferior de 20px, margem lateral de 10px */
+    border-radius: 5px; /* borda arredondada do botão */
+}
+.finalizar-pedido:hover {
+    background-color: #0056b3; /* cor de fundo alterada ao passar o cursor */
+}
+
+.produto #Quantidade {
+    text-align:right;
+    margin-left: auto;
+    padding-right: 30px;
+    font-family: 'ChineseRocks'; /* nome da sua fonte */
+    font-size: 16px; /* tamanho da fonte */
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px){
+    .produto {
+        width: 100%; /* ocupa toda a largura disponível */
+        max-width: 90%; /* define a largura máxima do retângulo */
+        height: 40px;
+        background-color: rgba(240, 240, 240, 0.5); /* cor de fundo do retângulo */
+        margin: 10px; /* margem ao redor do retângulo */
+        padding: 10px; /* preenchimento interno do retângulo */
+        border: 1px solid #ccc; /* borda do retângulo */
+        display: flex; /* torna o container um flex container */
+        justify-content: flex-start; /* alinha os itens horizontalmente */
+        align-items: center; /* alinha os itens verticalmente */
+        margin-top: 36px; /* espaço acima dos retângulos */
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .produto #Quantidade {
+        text-align:right;
+        margin-left: auto;
+        padding-right: 20px;
+        font-family: 'ChineseRocks'; /* nome da sua fonte */
+        font-size: 16px; /* tamanho da fonte */
+    }
+    .produto img {
+        width:147px;
+        height: 98px;
+    }
+}
+
+
+
+@media screen and (min-width: 400px) and (max-width: 991px){
+    .produto {
+        width: 100%; /* ocupa toda a largura disponível */
+        max-width: 350px; /* define a largura máxima do retângulo */
+        height: 40px;
+        background-color: rgba(240, 240, 240, 0.5); /* cor de fundo do retângulo */
+        margin: 10px; /* margem ao redor do retângulo */
+        padding: 10px; /* preenchimento interno do retângulo */
+        border: 1px solid #ccc; /* borda do retângulo */
+        display: flex; /* torna o container um flex container */
+        justify-content: flex-start; /* alinha os itens horizontalmente */
+        align-items: center; /* alinha os itens verticalmente */
+        margin-top: 36px; /* espaço acima dos retângulos */
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .produto #Quantidade {
+        text-align:right;
+        margin-left: auto;
+        padding-right: 20px;
+        font-family: 'ChineseRocks'; /* nome da sua fonte */
+        font-size: 16px; /* tamanho da fonte */
+    }
+    .produto img {
+        width:147px;
+        height: 98px;
+    }
+}
+
+
+
+

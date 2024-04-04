@@ -1,0 +1,83 @@
+@import url(./assets/fonts/fonts.css);
+:root{
+    --color-brown1: rgba(204, 135, 6, 0.87);
+    --color-babyBlue: rgb(0, 255, 255);
+}
+
+body{
+    background-image: url(./assets/images/BackGround\ -\ Inicial.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    flex-wrap: wrap;
+    font-family: 'Chinese-Rocks';
+}
+
+.content{
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 6rem;
+    justify-content: center;
+
+}
+
+.login{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 3%;
+    background-color: var(--color-babyBlue);
+    text-align: center;
+    
+}
+
+#login-title{
+    padding-top: 2.3rem;
+    font-size: 24px;
+}
+
+#input-login{
+    padding-top: 1rem;
+}
+
+#input-login input{
+    margin-bottom: 0.5rem;
+    width: 13rem;
+    height: 1.6rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+#user,
+#password {
+    padding-left: 0.9rem;
+}
+
+#user::placeholder,
+#password::placeholder {
+    font-size: 13px;
+}
+
+#user:hover {
+    width: 13.39rem;
+    transition: .3s;
+}
+
+#password:hover {
+    width: 13.39rem;
+    transition: .3s;
+}
+
+#btn-login{
+    margin-top: 30px;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    font-family: 'Chinese-Rocks';
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+
+

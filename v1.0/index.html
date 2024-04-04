@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WF Doceria</title>
+    <style>
+
+        
+body {
+            background-color: rgb(227, 227, 227);
+        }
+
+        .produto {
+            width: 300px; /* largura do retângulo */
+            height: 40px; /* altura do retângulo */
+            background-color: rgba(240, 240, 240, 0.5); /* cor de fundo do retângulo */
+            margin: 10px; /* margem ao redor do retângulo */
+            padding: 10px; /* preenchimento interno do retângulo */
+            border: 1px solid #ccc; /* borda do retângulo */
+            display: flex; /* torna o container um flex container */
+            justify-content: flex-start; /* alinha os itens horizontalmente */
+            align-items: center; /* alinha os itens verticalmente */
+            margin-top: 36px; /* espaço acima dos retângulos */
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .produto img {
+            width:150px;
+            height: 100px;
+        }
+
+        .teste {
+            width: 230px; /* largura do retângulo */
+            height: 60px; /* altura do retângulo */
+            background-color: rgb(227, 227, 227); /* cor de fundo do retângulo */
+            margin: 10px; /* margem ao redor do retângulo */
+            padding: 10px; /* preenchimento interno do retângulo */
+            border: 1px solid #ccc; /* borda do retângulo */
+            display: flex; /* torna o container um flex container */
+            justify-content: flex-start; /* alinha os itens horizontalmente à esquerda */
+            align-items: center; /* alinha os itens verticalmente */
+
+        }
+
+        .teste p {
+            margin: 0; /* remove a margem interna do parágrafo */
+            font-family: 'ChineseRocks'; /* nome da sua fonte */
+            font-size: 30px; /* tamanho da fonte */
+        }
+
+            @font-face {
+                font-family: "ChineseRocks";
+                src: url('chinese_rocks_rg.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+        }
+
+        .finalizar-pedido {
+            width: 200px; /* largura do botão */
+            height: 50px; /* altura do botão */
+            background-color: rgb(242, 156, 85); /* cor de fundo do botão usando RGB */
+            color: #fff; /* cor do texto do botão */
+            border: none; /* remove a borda do botão */
+            font-size: 16px; /* tamanho da fonte do texto do botão */
+            cursor: pointer; /* cursor do mouse ao passar sobre o botão */
+            margin: 28px 60px; /* margem superior e inferior de 20px, margem lateral de 10px */
+            border-radius: 5px; /* borda arredondada do botão */
+        }
+        .finalizar-pedido:hover {
+            background-color: #0056b3; /* cor de fundo alterada ao passar o cursor */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="teste">
+        <p>DELICIE-SE COM <br>NOSSAS OPÇÕES</p>
+    </div>
+    <div class="produto">
+        <!-- Aqui você pode inserir a imagem do seu produto -->
+        <img src="doce1Recorte.png" alt="Mouse de Paçoca">
+    </div>
+
+    <div class="produto">
+        <!-- Aqui você pode inserir a imagem do seu produto -->
+        <img src="doce2Recorte.png" alt="Torta de Paçoca">
+    </div>
+
+    <div class="produto">
+        <!-- Aqui você pode inserir a imagem do seu produto -->
+        <img src="doce3Recorte.png" alt="Pavê de Bis">
+    </div>
+
+    <button class="finalizar-pedido">Finalizar Pedido</button>
+
+</body>
+</html>
