@@ -1,0 +1,25 @@
+@import url(./assets/fonts/fonts.css);
+:root{
+    --color-brown1: rgba(204, 135, 6, 0.87);
+    --color-babyBlue: rgb(0, 255, 255);
+    --color-dark1: rgb(10,10,10);
+}
+
+body{
+    background: rgb(255,133,33);
+    background: linear-gradient(90deg, rgba(255,133,33,1) 0%, rgba(255,130,27,1) 56%, rgba(255,123,15,1) 100%);
+    font-family: 'Chinese-Rocks';
+}
+
+content h1{
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+

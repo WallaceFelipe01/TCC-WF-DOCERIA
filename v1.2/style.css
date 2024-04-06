@@ -2,20 +2,26 @@
 :root{
     --color-brown1: rgba(204, 135, 6, 0.87);
     --color-babyBlue: rgb(0, 255, 255);
+    --color-dark1: rgb(10,10,10);
 }
 
 body{
-    background-image: url(./assets/images/BackGround\ -\ Inicial.png);
+    /*background-image: url(./assets/images/BackGround\ -\ Inicial.png);*/
+    background: rgb(255,133,33);
+    background: linear-gradient(90deg, rgba(255,133,33,1) 0%, rgba(255,130,27,1) 56%, rgba(255,123,15,1) 100%);
     background-repeat: no-repeat;
-    background-size: auto;
-    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
     font-family: 'Chinese-Rocks';
+    min-height: 100vh;
+    margin: 0;
 }
 
 .content{
     flex-wrap: wrap;
     display: flex;
     padding-top: 6rem;
+    padding-bottom: 3rem;
     justify-content: center;
 
 }
@@ -26,7 +32,9 @@ body{
     border-radius: 3%;
     background-color: var(--color-babyBlue);
     text-align: center;
-    
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 #login-title{
