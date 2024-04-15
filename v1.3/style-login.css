@@ -1,0 +1,88 @@
+@import url(./assets/fonts/fonts.css);
+@import url(./assets/colors/colors.css);
+
+
+body{
+    /*background-image: url(./assets/images/BackGround\ -\ Inicial.png);*/
+    background: var(--color-background-red);
+    /*background: linear-gradient(90deg, rgba(255,133,33,1) 0%, rgba(255,130,27,1) 56%, rgba(255,123,15,1) 100%);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Chinese-Rocks';
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content{
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+
+}
+
+.login{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 3%;
+    background-color: var(--color-babyBlue);
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#login-title{
+    padding-top: 2.3rem;
+    font-size: 24px;
+}
+
+#input-login{
+    padding-top: 1rem;
+}
+
+#input-login input{
+    margin-bottom: 0.5rem;
+    width: 13rem;
+    height: 1.6rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+#user,
+#password {
+    padding-left: 0.9rem;
+}
+
+#user::placeholder,
+#password::placeholder {
+    font-size: 13px;
+}
+
+#user:hover {
+    width: 13.39rem;
+    transition: .3s;
+}
+
+#password:hover {
+    width: 13.39rem;
+    transition: .3s;
+}
+
+#btn-login{
+    margin-top: 30px;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    font-family: 'Chinese-Rocks';
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Item</title>
+    <link rel="stylesheet" href="style-pedidos.css">
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+    <div class="content">
+        <div class="background-order">
+            <header id="title-order">
+                <h1 class="text-light">Faça seu pedido</h1>
+            </header>
+            <ol id="products-list">
+                <li>
+                    <figure id="">
+                        <figcaption>Nome do item</figcaption>
+                        <!-- Adicione um evento JavaScript para mostrar a tela de detalhes -->
+                        <button type="button" class="btn btn-primary" onclick="showDetails('Torta Recheada')"><img src=""/></button>
+                        <p style="color: rgb(255, 208, 0)">*Quantidade*</p>
+                    </figure>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+<!-- Tela de detalhes -->
+<div class="overlay" id="detailsOverlay">
+    <div class="details">
+        <h2 id="detailsTitle">Detalhes do Item</h2>
+        <!-- Imagem do item em tamanho maior -->
+        <img src="" alt="Imagem do Item" id="itemImage">
+        <!-- Espaço para a descrição detalhada do item -->
+        <p id="itemDescription">Descrição detalhada do item vai aqui...</p>
+        <button id="close-ov" onclick="hideDetails()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </button>
+        <div class="quantity-buttons">
+            <button class="overlay-qtde-btn" type="button" onclick="aumentaQtde()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                </svg>
+            </button>
+            <button class="overlay-qtde-btn" type="button" onclick="diminuiQtde()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                  </svg>   
+            </button>
+        </div>
+        <p>Quantidade: </p>
+    </div>
+</div>
+
+<script src="./script-pedidos.js">
+</script>
+</body>
+</html>

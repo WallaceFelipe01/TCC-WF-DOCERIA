@@ -1,0 +1,76 @@
+@import url(./assets/colors/colors.css);
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo do overlay com transparência */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Z-index alto para ficar acima de outros elementos */
+}
+
+.details {
+    background-color: #fff; /* Cor de fundo do conteúdo do overlay */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    text-align: center;
+    position: relative;
+}
+
+.details h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.details p {
+    color: #2b2b2b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+#close-ov {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /*background-color: #ff3333;*/
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border: none;
+    /*border-radius: 30%;*/
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+.quantity-buttons {
+    /*position: absolute;*/
+    bottom: 10px;
+}
+
+.overlay-qtde-btn {
+    margin-left: 7px; /* Espaçamento entre os botões */
+    /*background-color: #007bff;*/
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay .details p{
+    margin-top: 1rem;
+}

@@ -1,0 +1,57 @@
+@import url(./assets/fonts/fonts.css);
+@import url(./assets/colors/colors.css);
+
+body{
+    background: var(--color-background-red);
+    /* background: linear-gradient(90deg, rgba(255,133,33,1) 0%, rgba(255,130,27,1) 56%, rgba(255,123,15,1) 100%); */
+    font-family: 'Chinese-Rocks';
+}
+
+.content{
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+#title-order {
+    margin-bottom: 2rem;
+}
+
+.background-order header {
+    text-align: center;
+}
+
+#products-list {
+    padding: 0%;
+    border: 1px solid black;
+    
+}
+
+#products-list img {
+    width: 66%;
+    height: 66%;
+}
+
+#products-list figcaption {
+    font-size: 100%;
+}
+
+#products-list li{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#products-list li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Chinese-Rocks';
+    font-size: 100%;
+}
+
+#products-list figure {
+    margin-bottom: 3rem;
+}
